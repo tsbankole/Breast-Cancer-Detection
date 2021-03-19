@@ -10,8 +10,11 @@ To build this Neural Network, activation functions that work well for classifica
 
 𝑁ℎ=𝑁𝑠(𝛼∗(𝑁𝑖+𝑁𝑜))
 Ni = number of input neurons. 
+
 No = number of output neurons. 
+
 Ns = number of samples in training data set. 
+
 α = an arbitrary scaling factor usually 2-10
 
 ### Metrics
