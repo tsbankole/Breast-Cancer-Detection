@@ -9,6 +9,7 @@ The solution of this problem will be approached by building an artificial neural
 To build this Neural Network, activation functions that work well for classification would be employed. This would include relU (Rectified Linear Unit) and tanh (Hyperbolic tangent). To prevent overfitting, the number of neurons in the network will be calculated according to this formula [4]
 
 𝑁ℎ=𝑁𝑠(𝛼∗(𝑁𝑖+𝑁𝑜))
+
 Ni = number of input neurons. 
 
 No = number of output neurons. 
@@ -22,6 +23,9 @@ Binary Cross Entropy would be used as a loss function for training the Artificia
 
 Data Exploration Ten real-valued features are computed for each cell nucleus: a) radius (mean of distances from center to points on the perimeter) b) texture (standard deviation of gray-scale values) c) perimeter d) area e) smoothness (local variation in radius lengths) f) compactness (perimeter^2 / area - 1.0) g) concavity (severity of concave portions of the contour) h) concave points (number of concave portions of the contour) i) symmetry j) fractal dimension ("coastline approximation" - 1). In addition to these features, the mean, standard error and worst of these features are also computed leading to a total of 30 features. It is therefore necessary to perform dimensionality reduction to find linear combinations of features that capture variability in the data.
 
+## Algorithm
+
+Aritificial Neural Network in PyTorch with activation functions such as relU and tanh were used in Amazon Sagemaker to train the Neural Network. A training accuracy of 98.6% and a test accuracy of 98.3% was obtained.
 
 ## References
 1. Bennett, Kristin P., and Olvi L. Mangasarian. "Robust linear programming discrimination of two linearly inseparable sets." Optimization methods and software 1, no. 1 (1992): 23-34.
