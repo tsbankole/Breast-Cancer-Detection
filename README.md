@@ -8,7 +8,7 @@ Given the features extracted from the digitized images of the tissues, the task 
 The solution of this problem will be approached by building an artificial neural network (ANN) in PyTorch which will produce a probability 𝑝∈[0,1] of the tissue being malignant. Here the null hypothesis is that the tissue is benign (𝑝=0 ) and the alternative hypothesis is that the tissue is malignant ( 𝑝 = 1 ).
 To build this Neural Network, activation functions that work well for classification would be employed. This would include relU (Rectified Linear Unit) and tanh (Hyperbolic tangent). To prevent overfitting, the number of neurons in the network will be calculated according to this formula [4]
 
-𝑁ℎ=𝑁𝑠(𝛼∗(𝑁𝑖+𝑁𝑜))
+𝑁ℎ=𝑁𝑠/(𝛼∗(𝑁𝑖+𝑁𝑜))
 
 Ni = number of input neurons. 
 
